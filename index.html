@@ -7,11 +7,20 @@
     <title>Vue Hello</title>
 </head>
 <body>
-    
 
     <div id="root">
-        <h1>{{ message }} {{ nome }} {{ cognome }}</h1>
+
+        <h3>{{ introduction }}</h3>
+
+        <label for="">Nome</label>
+        <input type="text" v-model="nome">
+        <label for="">Cognome</label>
+        <input type="text" v-model="cognome">
+
+        <h1>{{ message }} {{nome}} {{cognome}}!</h1>
+        
     </div>
+        
 
     <!-- VUE JS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

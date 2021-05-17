@@ -2,8 +2,9 @@ const app = new Vue({
     el: "#root",
 
     data: {
+      introduction: 'Inserisci i tuoi dati',
       message: 'Benvenuto',
-      nome: prompt("inserisci il tuo Nome"),
-      cognome: prompt("inserisci il tuo Cognome")
+      nome: "",
+      cognome: ""
     }
 })
